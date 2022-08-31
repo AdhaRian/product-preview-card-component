@@ -23,14 +23,14 @@ h1 {
 }
 
 p,
-strike {
+del {
   font-family: var(--Montserrat);
   font-weight: 500;
   margin-right: 7rem;
   color: var(--DarkGrayishBlue);
 }
 
-strike {
+del {
   margin-left: -3rem;
 }
 
