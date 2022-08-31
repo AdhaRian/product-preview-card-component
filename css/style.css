@@ -76,11 +76,11 @@ body {
 
 .container {
   display: flex;
+  margin: 2rem;
   border-radius: 10px;
   overflow: hidden;
   max-width: 800px;
   height: auto;
-  margin: 2rem;
 }
 
 .perfume {
