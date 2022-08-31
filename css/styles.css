@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 1rem 4rem 1rem 0;
+  font-family: var(--Fraunces);
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--VeryDarkBlue);
+}
+
+p,
+strike {
+  font-family: var(--Montserrat);
+  font-weight: 500;
+  margin-right: 7rem;
+  color: var(--DarkGrayishBlue);
+}
+
+strike {
+  margin-left: -3rem;
+}
+
+:root {
+  --DarkCyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --VeryDarkBlue: hsl(158, 36%, 28%);
+  --DarkGrayishBlue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --Montserrat: "Montserrat", sans-serif;
+  --Fraunces: "Fraunces", sans-serif;
+}
+
+.attribution {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 11px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  height: max-content;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  min-height: 100vh;
+  font-family: var(--Montserrat);
+  font-size: 14px;
+  background-color: var(--Cream);
+}
+
+.container {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 800px;
+  height: auto;
+  margin: 2rem;
+}
+
+.perfume {
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.card-info {
+  padding: 2rem;
+  width: 50%;
+  background-color: var(--White);
+}
+.card-info h1 {
+  margin-top: 2rem;
+}
+
+.desc p {
+  margin-top: 2rem;
+}
+
+.price {
+  margin: 1rem 1rem 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.price h1 {
+  color: var(--DarkCyan);
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  height: 60px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--White);
+  font-family: var(--Montserrat);
+  font-weight: 700;
+  background-color: var(--DarkCyan);
+}
+
+button img {
+  margin: 0.5rem;
+}
+
+button:hover {
+  background-color: var(--VeryDarkBlue);
+}
+
+@media all and (max-width: 910px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .card-info {
+    width: 100%;
+  }
+}
